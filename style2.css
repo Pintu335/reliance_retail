@@ -1,0 +1,220 @@
+* {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+     height: 100vh; 
+  }
+  .nav1 {
+    background: black;
+    color: white;
+    display: flex;
+    height: 6vw;
+    justify-content: center;
+    width: 100vw;
+  }.nav1 div:nth-child(1) {
+    display: flex;
+    align-items: right;
+    margin-left: 1%;
+    font-weight: bolder;
+    font-size: large;
+
+  }
+  .nav1 div:nth-child(2) {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    font-weight: bolder;
+    font-size: large;
+
+  }
+  .nav1 div:nth-child(3) {
+    display: flex;
+    justify-content: end;
+    margin-left: auto;
+    align-items: center;
+  }
+  .nav1 div:nth-child(3) p {
+    margin-right: 3rem;
+  }
+  .nav1 div:nth-child(3) img {
+    width: 3rem;
+    margin: 0px 20px;
+  }
+  .nav2 {
+    margin-top: 2px;
+  }
+  .nav2 ul {
+    padding: 4px;
+    display: flex;
+    background: blue;
+    list-style: none;
+  }
+
+  .nav2 ul a {
+    text-decoration: none;
+    margin-left: 20px;
+    color: white;
+  }
+  .container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.2fr 1.1fr 0.2fr 1.1fr 0.2fr 1.1fr 0.6fr 0.4fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "ar1 ar1 ar1 ar1 ar1 ar1 ar1"
+      ". . . . . . ."
+      "ar2 ar2 ar2 ar2 ar2 ar2 ar2"
+      ". . . . . . ."
+      "ar3 ar3 ar3 ar3 ar3 ar3 ar3"
+      ". . . . . . ."
+      "ar4 ar4 ar4 ar4 ar4 ar4 ar4"
+      ". . . . . . ."
+      "ar5 ar5 ar5 ar5 ar5 ar5 ar5";
+  }
+  
+  
+  
+  .square {
+    width: 170px;
+    height: 80px;
+    margin-right: 20px;
+    /* background: rgb(136, 176, 189); */
+   border-radius: 10px;
+   
+   display: flex;
+   text-align: center;
+   margin: 10px;
+   justify-content: center; 
+   align-items: center;
+   
+  }
+  
+  .ar-text{
+  display: flex;
+  text-align: left;
+  padding-top: 15px;
+  
+  
+  }
+  
+  .ar1 {
+    grid-area: ar1;
+    height: 100%;
+    background-color: white;
+     
+    
+    }
+    .ar1 * {
+        margin: 20px;
+        color: white;
+      }
+    .ar1-text {
+        font-size: 2em;
+        color:black;
+        display:flex;
+        justify-content:left;
+        
+        
+      }
+      .ar2 {
+        display: flex;
+        grid-area: ar2;
+        height: 100%;
+        width: 100%; 
+        background: cyan;
+        overflow:hidden ; 
+      }
+      .ar3 {
+        display:flex;
+        grid-area: ar3;
+        height: 100%;
+        width: 100%; 
+        background: cyan;
+        overflow: hidden; 
+      }
+      .ar4 {
+        display: flex;
+        grid-area: ar4;
+        max-height: 100%; 
+        max-width: 100%; 
+        background: cyan;
+        overflow: hidden; 
+      }
+      
+    
+      .ar5 {
+         grid-area: ar5;
+         height: 100%;
+         width: 100%;
+         background: rgb(30, 0, 255);
+      }
+      .ar-text{
+        margin: 15px;
+        
+      }
+      .ar-text-parent {
+        display: flex;
+       flex-direction: column;
+       color: rgb(24, 21, 21);
+       justify-content: center;
+        
+       }
+      
+    
+     
+  
+  .dropdown{
+    visibility: hidden;
+    opacity: 0;
+    padding: 5px;
+    position: absolute;
+    background-color: rgb(68, 70, 70);
+    top: 50px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.dropdown,.dropdown2 a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.dropdown2{
+    top: 7rem;
+    visibility: hidden;
+    opacity: 0;
+    padding: 5px;
+    left: 4rem;
+    background-color: rgb(68, 70, 70);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+.dropdown3{
+    position: absolute;
+    display: flex;
+    background-color: rgb(68, 70, 70);
+    visibility: hidden;
+    opacity: 0;
+    flex-direction: column;
+}
+    
+
+  .nav1 div:nth-child(3):hover .dropdown{
+visibility: visible;
+opacity: 1;
+}
+
+.library:hover .dropdown2{
+    visibility: visible;
+    opacity: 1;
+    width: fit-content;
+    }
+
+.certificate:hover .dropdown3{
+    visibility: visible;
+    opacity: 1;
+}
