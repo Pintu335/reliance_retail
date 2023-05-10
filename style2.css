@@ -127,6 +127,7 @@
         width: 100%; 
         background: cyan;
         overflow:hidden ; 
+        position: relative;
       }
       .ar3 {
         display:flex;
@@ -135,6 +136,7 @@
         width: 100%; 
         background: cyan;
         overflow: hidden; 
+        position: relative;
       }
       .ar4 {
         display: flex;
@@ -143,6 +145,7 @@
         max-width: 100%; 
         background: cyan;
         overflow: hidden; 
+        position: relative;
       }
       
     
@@ -153,7 +156,9 @@
          background: rgb(30, 0, 255);
       }
       .ar-text{
-        margin: 15px;
+        
+        margin: 10px;
+        position: relative;
         
       }
       .ar-text-parent {
@@ -163,6 +168,25 @@
        justify-content: center;
         
        }
+       
+       
+    
+    .ar2 .button button,
+    .ar3 .button button,
+    .ar4 .button button{
+      position: absolute;
+      bottom: 0; 
+      width: 100px;
+      bottom: 20px;
+      left:200px;
+      color: red;
+    }
+      
+      
+      
+      
+       
+
       
     
      
